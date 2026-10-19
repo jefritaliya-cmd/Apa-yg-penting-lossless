@@ -1,0 +1,37 @@
+{
+  "id": "bitchord-lossless-open",
+  "name": "Lossless Open Sources",
+  "version": "0.1.0",
+  "description": "Lossless (FLAC/WAV) search and playback from your own Subsonic/Navidrome server, Internet Archive, and Wikimedia Commons",
+  "author": "community",
+  "resources": [
+    "search",
+    "stream"
+  ],
+  "types": [
+    "music"
+  ],
+  "category:music": [
+    {
+      "id": "lossless-open",
+      "name": "Lossless Open Sources",
+      "author": "community",
+      "version": "0.1.0",
+      "code": 1,
+      "type": "MODULE",
+      "description": "FLAC dari server Navidrome/Subsonic pribadi (opsional), Internet Archive, dan Wikimedia Commons. Tanpa login untuk Archive dan Commons.",
+      "tags": ["LOSSLESS", "FLAC", "NAVIDROME", "SUBSONIC", "INTERNET ARCHIVE", "NO LOGIN"],
+      "download": "lossless-open.js",
+      "trusted": false,
+      "settings": [
+        { "key": "subsonicUrl", "label": "Subsonic/Navidrome URL", "type": "text", "default": "" },
+        { "key": "subsonicUser", "label": "Subsonic username", "type": "text", "default": "" },
+        { "key": "subsonicPassword", "label": "Subsonic password", "type": "password", "default": "" },
+        { "key": "subsonicLosslessOnly", "label": "Hanya tampilkan lossless (Subsonic)", "type": "toggle", "default": "true" },
+        { "key": "enableArchive", "label": "Aktifkan Internet Archive", "type": "toggle", "default": "true" },
+        { "key": "archiveCollections", "label": "Koleksi Archive (pisah koma, kosong = semua)", "type": "text", "default": "" },
+        { "key": "enableCommons", "label": "Aktifkan Wikimedia Commons", "type": "toggle", "default": "true" }
+      ]
+    }
+  ]
+}
